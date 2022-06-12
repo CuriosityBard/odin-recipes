@@ -27,15 +27,17 @@ a {
     display: block;
 
     color: rgb(8, 22, 59);
-    background-color:rgb(226, 202, 223);
+    background-color:rgb(247, 237, 245);
     border: solid 2px rgb(104, 20, 20);
     border-radius: 5px;
 
     width: fit-content;
-    padding: 3px;
+    padding: 3px 5px;
     grid-area: link;
 
     margin: 5px auto;
+
+    text-decoration: none;
 }
 
 header {
