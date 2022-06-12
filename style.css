@@ -1,0 +1,91 @@
+body {
+    background-color: rgb(242, 243, 228);
+    color: rgb(14, 8, 8);
+
+    display: grid;
+
+    grid-template-areas: 
+        "head head head"
+        "desc desc desc"
+        "ingredients steps steps";
+
+    padding: 0 10%;
+}
+
+img {
+    width: 50%;
+
+    border: solid 2px rgb(104, 20, 20);
+    border-radius: 5px;
+
+    float: none;
+
+    grid-area: img;
+}
+
+a {
+    display: block;
+
+    color: rgb(8, 22, 59);
+    background-color:rgb(226, 202, 223);
+    border: solid 2px rgb(104, 20, 20);
+    border-radius: 5px;
+
+    width: fit-content;
+    padding: 3px;
+    grid-area: link;
+
+    margin: 5px auto;
+}
+
+header {
+    grid-area: head;
+
+    justify-items: center;
+
+    display: grid;
+    grid-template-areas:
+        "title"
+        "img"
+        "link";
+}
+
+h1 {
+    text-align: center;
+    grid-area: title;
+
+    text-align: center;
+
+    margin: 2px auto;
+}
+
+#description {
+    grid-area: desc;
+    text-align: center;
+}
+#ingredients {
+    grid-area: ingredients;
+}
+#steps {
+    grid-area: steps;
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        grid-template-areas: 
+            "head"
+            "desc"
+            "ingredients"
+            "steps";
+    }
+
+    img {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        padding: 0px 20%;
+    }
+}
