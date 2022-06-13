@@ -1,6 +1,8 @@
 html {
     background-color: rgb(235, 236, 210);
     color: rgb(14, 8, 8);
+
+    font-family: 'Georgia', 'Garamond', serif;
 }
 
 body {
@@ -71,9 +73,11 @@ h1 {
     text-align: center;
     grid-area: title;
 
-    text-align: center;
+    margin: 20px auto 2px auto;
 
-    margin: 2px auto;
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3em;
 }
 
 #description {
