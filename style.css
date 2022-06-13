@@ -1,6 +1,12 @@
-body {
-    background-color: rgb(242, 243, 228);
+html {
+    background-color: rgb(235, 236, 210);
     color: rgb(14, 8, 8);
+}
+
+body {
+    background-color: rgb(254, 255, 244);
+    border: solid 1px rgb(153, 153, 140);
+    box-shadow: 5px 5px 5px rgb(36, 32, 32);
 
     display: grid;
 
@@ -9,7 +15,7 @@ body {
         "desc desc desc"
         "ingredients steps steps";
 
-    padding: 0 10%;
+    margin: 20px 10%;
 }
 
 img {
@@ -35,7 +41,7 @@ a {
     padding: 3px 5px;
     grid-area: link;
 
-    margin: 5px auto;
+    margin: 10px auto;
 
     text-decoration: none;
 }
@@ -50,6 +56,15 @@ header {
         "title"
         "img"
         "link";
+}
+
+header p {
+    padding: 0 2em;
+}
+
+section {
+    margin-bottom: 2em;
+    padding: 0px 2em;
 }
 
 h1 {
@@ -79,6 +94,8 @@ h1 {
             "desc"
             "ingredients"
             "steps";
+
+        margin: 20px 5%;
     }
 
     img {
@@ -88,6 +105,6 @@ h1 {
 
 @media only screen and (min-width: 1200px) {
     body {
-        padding: 0px 20%;
+        margin: 20px 20%;
     }
 }
